@@ -1,0 +1,200 @@
+{
+	"info": {
+		"_postman_id": "e111b90f-91ec-4aa2-a21e-afa885c257a1",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get observation by lat/lon",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.weatherbit.io/v2.0/current?lat=35.7796&lon=-78.6382&key=8ea98582f24a4abab771427b7e268b53",
+					"protocol": "https",
+					"host": [
+						"api",
+						"weatherbit",
+						"io"
+					],
+					"path": [
+						"v2.0",
+						"current"
+					],
+					"query": [
+						{
+							"key": "lat",
+							"value": "35.7796"
+						},
+						{
+							"key": "lon",
+							"value": "-78.6382"
+						},
+						{
+							"key": "key",
+							"value": "8ea98582f24a4abab771427b7e268b53"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.weatherbit.io/v2.0/current?&city=Raleigh&country=US&key=8ea98582f24a4abab771427b7e268b53",
+					"protocol": "https",
+					"host": [
+						"api",
+						"weatherbit",
+						"io"
+					],
+					"path": [
+						"v2.0",
+						"current"
+					],
+					"query": [
+						{
+							"key": null,
+							"value": null
+						},
+						{
+							"key": "city",
+							"value": "Raleigh"
+						},
+						{
+							"key": "country",
+							"value": "US"
+						},
+						{
+							"key": "key",
+							"value": "8ea98582f24a4abab771427b7e268b53"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.weatherbit.io/v2.0/current?&postal_code=27601&country=US&key=8ea98582f24a4abab771427b7e268b53",
+					"protocol": "https",
+					"host": [
+						"api",
+						"weatherbit",
+						"io"
+					],
+					"path": [
+						"v2.0",
+						"current"
+					],
+					"query": [
+						{
+							"key": null,
+							"value": null
+						},
+						{
+							"key": "postal_code",
+							"value": "27601"
+						},
+						{
+							"key": "country",
+							"value": "US"
+						},
+						{
+							"key": "key",
+							"value": "8ea98582f24a4abab771427b7e268b53"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.weatherbit.io/v2.0/current?&city_id=8953360&key=8ea98582f24a4abab771427b7e268b53",
+					"protocol": "https",
+					"host": [
+						"api",
+						"weatherbit",
+						"io"
+					],
+					"path": [
+						"v2.0",
+						"current"
+					],
+					"query": [
+						{
+							"key": null,
+							"value": null
+						},
+						{
+							"key": "city_id",
+							"value": "8953360"
+						},
+						{
+							"key": "key",
+							"value": "8ea98582f24a4abab771427b7e268b53"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "apikey",
+		"apikey": [
+			{
+				"key": "key",
+				"value": "key",
+				"type": "string"
+			},
+			{
+				"key": "value",
+				"value": "8ea98582f24a4abab771427b7e268b53",
+				"type": "string"
+			},
+			{
+				"key": "in",
+				"value": "query",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
